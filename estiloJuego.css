@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+}	
+
+#exterior{
+	margin: 15px auto;
+    margin-top: 40px;
+	width: 650px;
+	height: 700px;
+	background-image: url('res/fondoRec.bmp');
+}
+
+#zona{
+	position:relative;
+	top:167px;
+	margin:auto;
+	width: 567px;
+	height: 487px;
+	border-radius: 17px;
+	border:1px solid #000060;
+    background-image: url('res/fondo.jpg');
+}
