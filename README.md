@@ -1,9 +1,10 @@
 # ArkanoidPOO
 Un Arkanoid orientado a objetos
 
- * @autor Youssef El Faqir El Rhazoui
+ @autor Youssef El Faqir El Rhazoui
  
- * Arkanoid con objetos y extras:
+ Arkanoid con objetos y extras:
+ 
  *		Todo lo de la parte sin obj
  *		Diseño de niveles con diferentes ladrillos, de momento 3 niveles
  *		Los ladrillos cuando se destruyen muestran su puntuacion durante un segundo
