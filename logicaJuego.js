@@ -1,27 +1,4 @@
-/*
- * @autor Youssef El Faqir El Rhazoui
- *
- * Arkanoid con objetos y extras:
- *  -Todo lo de la parte sin obj
- *  -Diseño de niveles con diferentes ladrillos, de momento 3 niveles
- *	-Los ladrillos cuando se destruyen muestran su puntuacion durante un segundo
- *	-Fisica más realista de los ladrillos con la pelota
- *  -Puntuacion y tiempo del jugador
- *  -Sonido y musica
- *  -Vidas
- *  -PowerUps
- *      -Una vida extra
- *      -Aumentar el tamaño de la raqueta
- *      -La pelota va más lenta
- *      -Tres pelotas a la vez
- *  -Animacion de muerte de la raqueta
- *  -Pantalla final de game over
- */
-
-
-
-
-//constantes del tamaño de la pantalla
+//constantes del tamaÃ±o de la pantalla
 const TAM_MARCO_X = 567;
 const TAM_MARCO_Y = 487;
 
@@ -77,7 +54,7 @@ Pelota.prototype.muevePelota = function (objCoordX, objCoordY, OBJ_TAM_X, OBJ_TA
 
 /*
  * Detecta el choque de la pelota con el elemento que se le pase 
- * (tiene lógica inversa, busca que no haya colision)
+ * (tiene lÃ³gica inversa, busca que no haya colision)
  */
 
 Pelota.prototype.colisionPelota = function (coordX, coordY, TAM_X, TAM_Y) {
@@ -237,7 +214,7 @@ function Raqueta() {
 }
 
 /*
- * Añadirá las vidas iniciales a la pantalla 
+ * AÃ±adirÃ¡ las vidas iniciales a la pantalla 
  */
 
 Raqueta.prototype.annadeVidas = function () {
@@ -255,7 +232,7 @@ Raqueta.prototype.annadeVidas = function () {
 }
 
 /*
- * Añade y suma una vida
+ * AÃ±ade y suma una vida
  */
 
 Raqueta.prototype.annadeVida = function () {
@@ -290,7 +267,7 @@ Raqueta.prototype.muestraRaqueta = function () {
 }
 
 /*
- * Devuelve al tamaño normal a la raqueta
+ * Devuelve al tamaÃ±o normal a la raqueta
  */
 
 Raqueta.prototype.devuelveTam = function () {
@@ -525,7 +502,7 @@ function ListaPowerUp() {
 }
 
 /*
- * Añade un powerUp a la lista
+ * AÃ±ade un powerUp a la lista
  */
 
 ListaPowerUp.prototype.annadePU = function (coordX, coordY, tipo) {
@@ -579,7 +556,7 @@ var tiempoCronometro = (new Date()).getTime();
 var eventoCrono;
 
 /*
- * Mueve la raqueta según que tecla se pulse del teclado
+ * Mueve la raqueta segÃºn que tecla se pulse del teclado
  */
 
 function controlaRaquetaTeclado(evento, raqueta, pelota) {
@@ -612,7 +589,7 @@ function controlaRaquetaRaton(evento, raqueta) {
 }
 
 /*
- * Lanza la pelotahacia arriba, cuando esta está situada encima de 
+ * Lanza la pelotahacia arriba, cuando esta estÃ¡ situada encima de 
  * la raqueta.
  */
 
@@ -644,7 +621,7 @@ function probabilidadPU(num) {
 }
 
 /*
- * Ejecuta la acción del power up pasado
+ * Ejecuta la acciÃ³n del power up pasado
  */
 
 function ejecutaPU(pU, listaPelotas, raqueta, listaLadrillos, listaPU) {
@@ -653,7 +630,7 @@ function ejecutaPU(pU, listaPelotas, raqueta, listaLadrillos, listaPU) {
         case "corazon":
             raqueta.annadeVida();
             break;
-        //La pelota se mueve más lento 
+        //La pelota se mueve mÃ¡s lento 
         case "slow":
             clearInterval(parar);
             vel = VEL_INI + 2;
@@ -884,7 +861,7 @@ function velocidadJuego(listaPelotas, raqueta, listaLadrillos, listaPU) {
 }
 
 /*
- * Añade la musica y los efectos de sonido al dom
+ * AÃ±ade la musica y los efectos de sonido al dom
  */
 
 function inicializaMusica() {
@@ -933,7 +910,7 @@ function pauseSonido(sonido) {
  }
 
 /*
- * Termina la partida, y muestra un mensaje de finalización 
+ * Termina la partida, y muestra un mensaje de finalizaciÃ³n 
  * si el valor pasado es True
  */
 
@@ -965,8 +942,8 @@ function terminaPartida(fin) {
 
 /*
  * Selecciona el nivel
- * Cada número es la codificación de un color de ladrillo.
- * El cero es un hueco vacío.
+ * Cada nÃºmero es la codificaciÃ³n de un color de ladrillo.
+ * El cero es un hueco vacÃ­o.
  */
 
 function seleccionaNivel() {
