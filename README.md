@@ -11,10 +11,10 @@ Un Arkanoid orientado a objetos
  *		Puntuacion y tiempo del jugador
  *		Sonido y musica
  *		Vidas
- *		PowerUps:
- 			 -Una vida extra
- 			 -Aumentar el tamaño de la raqueta
-     -La pelota va más lenta
- 			 -Tres pelotas a la vez
+ *		PowerUps:</br>
+ 			 -Una vida extra</br>
+ 			 -Aumentar el tamaño de la raqueta</br>
+     -La pelota va más lenta</br>
+ 			 -Tres pelotas a la vez</br>
  *		Animacion de muerte de la raqueta
  *		Pantalla final de game over
