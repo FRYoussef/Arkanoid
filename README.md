@@ -8,6 +8,6 @@
 
 ![alt text](https://user-images.githubusercontent.com/25131320/34266844-f73bfd8e-e67a-11e7-8634-6d200bcff806.PNG)
 
-#### Licence GPL v3
+#### License GPL v3
 #### Author:
 - Youssef El Faqir El Rhazoui
